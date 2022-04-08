@@ -20,6 +20,7 @@
 ### Step 3: run some commands in the remote terminal
 
 > Now you see why it is useful to have a terminal, right?
+
 1. Because we don't have access to the GUI of the server, we have to access it through "text" commands, which replaces the clicking of icons.
 2. In the terminal, we simply enter the following two commands
 * `cd ~   `this command changes the current directory to the root directory
@@ -28,6 +29,7 @@
 
 ### Step 4: moving files with `scp`
 > Sending a file from your local computer to a remote server.. This feels more like hacking, I guess?
+
 1. We enter the command in our local terminal `scp <file to transport> <server name>:<server directory>` as shown below in the code.
 2. We enter the password and see that the file appears in the server side of the terminal successfully(I have compiled the java file on the server side already, but before `javac` there is only a `.java` file on the server side).
 ![scp_command](images/scp1.png)
@@ -36,6 +38,7 @@
 
 ### Step 5: Setting an SSH Key
 > Typing in a password everytime you login is cumbersome. Let's do something to make our lives easier.
+
 1. First we generate public and private keys locally with `ssh-keygen`. Then we create a directory on the server side called `.ssh`(in my case it is already present when I tried to create it, but just do it to make sure it is there).
 2. Then we `scp` the public key file that is local to the remote server. This allows us to connect to the server or transport files without entering passwords.
 ![ssh-keygen-result](images/ssh-keygen-result.png)
