@@ -8,4 +8,10 @@
 
 1. Go to the [VScode](https://code.visualstudio.com/) website and download.
 2. Install and follow the steps. Open the application once you are finished installing, you should see the following
+![VScodeImage](images/VScode.png)
+
+### Step 2: remote connecting
+>We are going to use the terminal provided by VScode to use ssh to access other computers.
+
+1. 
 
