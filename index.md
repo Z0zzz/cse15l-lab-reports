@@ -1,6 +1,7 @@
 # Michael's Portfolio
 
 ## A Brief Look at the Projects done by this person
+
 ---
 This is a simple *portfolio website* open to **all** views on the internet to showcase projects.
 
@@ -26,3 +27,4 @@ print("Hello GitHub")
 System.out.println("Hello GitHub");
 ```
 
+Link to [report1](lab-report-1-week-2.html)
