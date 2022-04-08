@@ -5,7 +5,7 @@
 This is a simple *portfolio website* open to **all** views on the internet to showcase projects.
 
 Quoting a famous quote
-> This is a quote by a `famous person`
+> This is a quote by `Albert Einstein`, a famous theoraticle physicist.
 [Here](https://www.google.com/) is the link to that quote.
 
 ![Image](https://globalgovernanceforum.org/wp-content/uploads/2020/10/Albert-Einstein.jpg)
