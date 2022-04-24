@@ -24,3 +24,10 @@ The error produces a symptom of wrong output, namely, it returns an empty array 
 In this case, the failure inducing input contains a link, but the link is not in the correct form which would be parsed by the code, so the code couldn't recognize the link by showing the symptom of giving the wrong input. The bug in the code is the failure to recognize that a link might not be fully wrapped within a pattern, and it should detect a valid even when the given pattern a link is supposed to be wrapped in is not given.
 
 ### Error 3:
+The last failure inducing input is the following
+[file](https://github.com/Z0zzz/markdown-parser/blob/main/test-file4.md). 
+The symptom of the input is the wrong return value, namely
+![Error3](images/report2_errorMessage3.png)
+This input is fixed by the following change to the code.
+![Error33](images/report2_error3.png)
+In this case, the failure inducing input has the correct format for a link, but what is supposed to be in the position of the link is not a link, instead, it is a image, and this is the symptom. The bug in the code is that the code doesn't check for any situation where what is supposed to be a link might not actually be the link. So a helper function is added to navigate such cases.
